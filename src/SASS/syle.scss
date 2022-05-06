@@ -1,0 +1,140 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+$color1: #F7F7F7;
+$color2: #FFBC97;
+$color3: #ffae00e0;
+$color4: #FFE300;
+body{
+    overflow-y: hidden;
+}
+
+// header
+.header {
+    width: 100%;
+    background-color: $color2;
+    
+}
+.header__container{
+    display:flex;
+    justify-content: flex-end;
+    padding: 5px;
+    font-size: 18px;
+    span{
+        color: $color4;
+    }
+}
+
+// enemy
+.enemy__container{
+    width: 100%;
+    text-align: center;
+    background-color: $color1;
+    height: 60vh;
+    padding-top: 30vh;
+}
+.enemy__container:hover{
+    cursor: pointer;
+}
+
+// store
+.store__container{
+    background-color: #ffbb9796;
+    position: absolute;
+    top: 95vh;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    text-align: center;
+    overflow-y: auto;
+    .store__container-obj{
+        justify-items: center;
+        background-color: $color3;
+        width: 60%;
+        margin-left:auto;
+        margin-right:auto;
+        border-radius:25%;
+        padding: 5px;
+        max-width: 240px;
+        ul{
+            list-style-type: none;
+        }
+         button{
+            border: none;
+            background-color: $color1;
+            font-size: 14px;
+            padding: 5px;
+            border-radius: 25%;
+         }
+         button:hover{
+             cursor: pointer;
+         }
+    }
+    .enemy__container-obj-price{
+        display: flex;
+        justify-content: center;
+        span{
+            color: $color4;
+        }
+    }
+    span:hover{
+        cursor: pointer;
+    }
+}
+
+
+@media only screen and(min-width:768px) {
+    .enemy__container{
+        h4{
+            font-size: 18px;
+        }
+    }
+}
+@media only screen and(min-width:1200px) {
+    .enemy__container{
+        h4{
+            font-size: 25px;
+        }
+        img{
+            width: 13vw;
+        }
+    }
+    .header{
+        .header__container{
+            span{
+                font-size: 34px
+            }
+            h3{
+                font-size: 34px
+            }
+        }
+    }
+    .store__container{
+        span{
+            font-size: 34px;
+            grid-area: 1/ span 3;
+            
+        }
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 50px 1fr;
+        .store__container-obj{
+            font-size: 24px;
+            height: 40vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            button{
+                font-size:22px;
+                padding: 5px;
+            }
+            // height: fit-content;
+            margin: auto;
+        }
+        row-gap: 10px;
+    }
+}

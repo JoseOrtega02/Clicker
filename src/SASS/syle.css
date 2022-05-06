@@ -1,0 +1,158 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  overflow-y: hidden;
+}
+
+.header {
+  width: 100%;
+  background-color: #FFBC97;
+}
+
+.header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 5px;
+  font-size: 18px;
+}
+
+.header__container span {
+  color: #FFE300;
+}
+
+.enemy__container {
+  width: 100%;
+  text-align: center;
+  background-color: #F7F7F7;
+  height: 60vh;
+  padding-top: 30vh;
+}
+
+.enemy__container:hover {
+  cursor: pointer;
+}
+
+.store__container {
+  background-color: #ffbb9796;
+  position: absolute;
+  top: 95vh;
+  width: 100%;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  gap: 10px;
+  text-align: center;
+  overflow-y: auto;
+}
+
+.store__container .store__container-obj {
+  justify-items: center;
+  background-color: #ffae00e0;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 25%;
+  padding: 5px;
+  max-width: 240px;
+}
+
+.store__container .store__container-obj ul {
+  list-style-type: none;
+}
+
+.store__container .store__container-obj button {
+  border: none;
+  background-color: #F7F7F7;
+  font-size: 14px;
+  padding: 5px;
+  border-radius: 25%;
+}
+
+.store__container .store__container-obj button:hover {
+  cursor: pointer;
+}
+
+.store__container .enemy__container-obj-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.store__container .enemy__container-obj-price span {
+  color: #FFE300;
+}
+
+.store__container span:hover {
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+  .enemy__container h4 {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .enemy__container h4 {
+    font-size: 25px;
+  }
+  .enemy__container img {
+    width: 13vw;
+  }
+  .header .header__container span {
+    font-size: 34px;
+  }
+  .header .header__container h3 {
+    font-size: 34px;
+  }
+  .store__container {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-rows: 50px 1fr;
+        grid-template-rows: 50px 1fr;
+    row-gap: 10px;
+  }
+  .store__container span {
+    font-size: 34px;
+    -ms-grid-row: 1;
+    grid-area: 1/ span 3;
+  }
+  .store__container .store__container-obj {
+    font-size: 24px;
+    height: 40vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: auto;
+  }
+  .store__container .store__container-obj button {
+    font-size: 22px;
+    padding: 5px;
+  }
+}
+/*# sourceMappingURL=syle.css.map */
