@@ -1,5 +1,6 @@
 # Clicker
 I made this project with react/redux and the art.\
+Is an simple clicker game with 3 enemys and 3 objects ,you can defeat the enemys and buy the objects.\
 You can play it and enjoy :) .
 
 ![ezgif com-gif-maker](https://user-images.githubusercontent.com/97007969/167229221-0e73efb0-62e4-4800-a8a2-e591e65540ff.gif)
